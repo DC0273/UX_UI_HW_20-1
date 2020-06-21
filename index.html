@@ -1,54 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<!--Header navigation with logo, name, and <ul> links-->
+
+<!--a) Header navigation with logo, name, and <ul> links using Boostrap4 nav component-->
     <div id="topnav" class="navigation">
         <a class="logo" href="#"><img src="images/LOGO.png" style="width:46px;height:42px"></a>
         <a class="Name">Ling-Yun Tang, PhD</a>
-    <nav class="menu">
-    <a class="Projects" href="#home">Projects</a>
-    <a href="About">About</a>
-    <a href="Resume">Resume</a>
-    </nav>
+    <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Footprints</a>
+              <a class="dropdown-item active" href="#">Project Create</a>
+              <a class="dropdown-item" href="#">NSA</a>
+              <a class="dropdown-item" href="#">Wander</a>
+            </div>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Contact</a>
+        </li>
+      </ul>
 </div> 
 
-<!--Heading-->
-<div class="heading">
-<h2 style="font-family:'Open Sans', sans-serif">UX researcher, designer, sociologist, & content strategist</h1> 
+<!--b) Heading using Boostrap4 Jumbotron>-->
+  <div class="jumbotron">
+    <div class="mx-auto" style="width:800px">
+    <h1 class="display-4">Project Create</h1>
+    <p class="lead">Streamlining the online donation process and making content branding more consistent with a DC-based art non-profit’s mission</p>
+    </div>
+  </div>
+
+<!--Overview with subheading and two columns-->
+<div class="container">
+    <hr class="my-5">
+    <h3>OVERVIEW</h3>
 </div>
-<!--Projects using flexItems and rows-->
-<hr style="width:75%;color: #f4f4f4">
-<div class="subHead">
-    <h2 style="font-family:'Open Sans', sans-serif;">Projects</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6" style="margin-top:30px">
+            <b>Problem:</b>
+            <p>How can we create a stronger connection to users so that they are more likely to donate money or goods to Project Create?
+            </p>
+            <b>Solution:</b>
+            <p>My interactive mobile and desktop prototypes encourages users to donate by more clearly aligning the organization’s mission with the donation process, and highlighting the specific outcomes of donations.
+            </p>
+            <b>My Role:</b>
+            <p>User interviews, background research, competitor analysis, surveys, persona development, user testing, RWD wireframes, prototyping, style tile creation</p>
+            <b>Tools:</b>
+            <p>Adobe XD, Miro, InVision, Trello</p>
+            <b>Team:</b>
+            <p>Kelsey Davis, Liz Sacks, Ling-Yun Tang</p>
+            <b>Dates:</b>
+            <p>April 9 - May 2, 2020</p>
+        </div>
+
+        <div class="col-sm-6" style="margin-top:30px">      
+            <span class="border">
+            <img src="images/WebNews.png" class="img-responsive" style="width:100%" alt="Image">
+            </span>
+            <p>Redesigned "About" page</p>
+            <a href="#" class="btn btn-primary">View Prototype</a>
+        </div>
+  </div>
 </div>
-<!--Flex containers and content within each flexItem box-->
+
+<!--Research-->
+
+<div class="container">
+    <hr class="my-5">
+    <h3>RESEARCH</h3>
+</div>
+
+<div class="container" style="margin-top:30px">
+     <b>BACKGROUND</b>
+            <p>Project Create is a DC nonprofit that provides free art classes to some of the city’s most vulnerable youth.  The organization is expanding its programming and searching for ways reach out to new individual donors.  The current website has recently been updated but the mission branding can be made more prominent, and the donation process can be further streamlined.  
+            </p>
+            <p>Our reasons for partnering with Project Create were two-fold.  First, we had a personal connection to the organization through our team member, Liz, a former volunteer art instructor.  Second, the organization has a mission purpose that we could champion.  Personally, this design project appealed to me as someone with a long-time professional and personal interest in the social impact the arts and represented a tangible and immediate way that I could directly lend my skills to support a worthy cause.
+            </p>
+</div>
+
+<div class="container" style="margin-top:30px">
+    <b>PROBLEM STATEMENT</b>
+            <p>Despite a recently revamped website, a vibrant and expanding arts program, and the acquisition of a new arts center in Anacostia, Project Create struggles to attract potential donors to give through its website.  The donation process on the current website does not clearly communicate the mission purpose of Project Create, and the payment page lacks instructional features that can streamline the donation process.</p>
+            <p>To figure out how to improve the user experience of donating money, we asked the following questions:</p>
+            <ul class="inside">    
+            <li> How do users navigate the donation page?</li>
+                <li> What motivates donors to give?</li>
+                <li> What features of the website can be improved upon, and how?</li>
+            </ul>
+            </p>
+</div>
+
+<div class="container" style="margin-top:30px">
+<div class="row">
+    <div class="col-sm-6" style="margin-top:30px">
+        <b>INTERVIEW INSIGHTS</b>
+        <p>Based on five one-on-one interviews with Project Create staff and families, we discovered:</p>
+        <ul class="inside">
+        <li>Increasing the number of individual donors is a key priority for the organization</li>
+        <li>While many users connect with Project Create through social media, the website should be the place to attract existing and new potential donors</li>
+        </ul>
+    </div>
+
+    <div class="col-sm-6" style="margin-top:30px">
+        <b>SURVEY FINDINGS</b>
+        <p>We sent out a survey to learn more about what potential donors are looking for when giving to a cause.  Key insights included:</p>
+        <ul class="inside">
+        <li>Donors need to clearly identify the mission of an organization in order to give</li>
+        <li>Donors need to know where their money is going in order to feel confident to donate money or goods</li>        
+        </ul>   
+    </div>
+</div>
+
+<div class="container">
+    <hr class="my-5">
+    <h3>DEFINTION & IDEATION</h3>
+    </div>
+
+<div class="container" style="margin-top:30px">
+    <b>PERSONA</b>
+    <p>We created a persona, Kimberly, a donor to Project Create.  Designing for Kimberly that her dollars are making a specific and meaningful impact.</p>
+    <img src="images/UserPersonaKimberly.png" width="1000" height="581" class="mx-auto d-block">
+</div>
+
+<div class="container" style="margin-top:30px">
+    <div class="row">
+    <div class="col-sm-4" style="margin-top:30px">
+    <b>SKETCHES</b>
+    <p>1) In this initial mobile prototype, I sketched out ways for users to select the time frame for donating - once or monthly - and corresponding dollar amounts to match.</p>
+    <p>2) I also explored different layouts for itemizing ways to give using the existing external pay services, PayPal and Network for Good.</p>
+    </div>
+    
+    <div class="col-sm-8" style="margin-top:30px">
+    <img src="images/WebSketch.png" width="600" height="500">
+    </div>
+
+</div>
+
+<div class="container" style="margin-top:30px">
+    <div class="row">
+        <div class="col-sm-8" style="margin-top:30px">
+            <img src="images/Wireframes.png" width="600" height="500">
+            </div>
+
+        <div class="col-sm-4" style="margin-top:30px">
+<b>WIREFRAMES</b>
+    <p>1) Student and teacher testimonials in hero section</p>
+    <p>2) Prominent donate button above the fold</p>
+    <p>3) Updated "News and Events" and "Featured Classes"</p>
+    <p>4) A variety of donation options for users</p>
+    <p>5) Suggested giving amounts</p>
+    <p>6) Itemization of purchases correspond to dollar amounts</p>
+    <p>7) Personalized thank you note</p>
+</div>
+
+<div class="container">
+    <hr class="my-5">
+    <h3>TESTING & ITERATION</h3>
+</div>
+
+<div class="container" style="margin-top:30px">
+    <b>PROTOTYPE</b>
+<p>Based on testing and iteration, I created a prototype that incorporates user suggestions:
+<ul class="inside">
+    <li>Easy to find donation buttons above the fold</li>
+    <li>Identifying more service offerings above home page fold, including news and events that are easy to find at a glance</li>
+    <li>Greater accuracy in defining the organization as illustrated by the About Page</li>
+    <li>A donation page that provides details about where funds will be allotted, as well as options for donors to select priority areas of spending</li>
+</ul>    
+<p>Combining the above with ongoing heuristic evaluation, I also included a personalized “Thank You” page from the Project Create director to reinforce the relationship between the organization and its supporters.</p>
+</div>
+
+<div class="container" style="margin-top:30px">
+    <b>Mobile</b>
+</div>
+<div class="container" style="margin-top:30px">
+        <img src="images/MobileHome.png" width="147" height="600">
+        <img src="images/MobileMission.png" width="147" height="600">
+        <img src="images/MobileDonate.png" width="147" height="600">
+        <img src="images/MobileThankYou.png" width="147" height="600">
+    </div>
 
 
+    <div class="container" style="margin-top:30px">
+        <b>Web</b>
+    <div class="row row-cols-1 row-cols-md-2" style="margin-top:30px">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="images/WebHome.png" class="card-img-top" alt="...">
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card">
+            <img src="images/WebAbout.png" class="card-img-top" alt="...">
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card">
+            <img src="images/WebDonate.png" class="card-img-top" alt="...">
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card">
+            <img src="images/WebThankYou.png" class="card-img-top" alt="...">
+          </div>
+        </div>
+      </div>
+
+<div class="container">
+    <hr class="my-5">
+    <h3>CONCLUSION</h3>
+    <p>During the redesign process, I drew on primary and secondary research to reflect on Project Create’s growth as an organization and how the website can help it to carry out its strategic goals for donorship.  The design and prototyping phases of the project revealed how a user flow that consistently carries out the message of Project Create’s commitment to its students and the arts can strengthen the nonprofit’s appeal to donors.  
+    </p>
+</div>
+
+<div class="container">
+    <hr class="my-5">
+    <h3>VIEW MORE PROJECTS</h3>
+</div>
+<div class="card-group">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
 
 <!--Footer-->
-<div class=footer>
+<footer class="container-fluid" style="margin-top:30px">
     <a href="#" class="email">Email</a>
     <a href="#" class="LinkedIn">LinkedIn</a>
     <p id="contact">© Copyright Ling-Yun Tang 2020</p>
-</div>
-    <!-- Optional JavaScript -->
+<footer>
+    
+<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-      <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
